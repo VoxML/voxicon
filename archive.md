@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: archive
 title: VoxWorld - Archive
 sitemap:
     priority: 1.0
