@@ -22,7 +22,7 @@ location:           Waltham, MA
 #email:               # change this to your email to receive free emails for your contact submissions via Slapform.com
 
 # Other
-background_image:   /images/SiteBanner2.png
+background_image:   /images/bg.png
 # Tip: The color palette and other styles can be configured in /_sass/lib/_vars.scss
 slapform_thankyou_page: /thank-you
 
