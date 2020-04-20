@@ -1,7 +1,7 @@
 # Site
-title:              Massively
-bio:                'Jekyll version of the Massively theme by HTML5UP'
-description:        "Jekyll version of the Massively theme by HTML5UP"
+title:              Voxicon
+bio:                'Language-driven event simulation'
+description:        "Language-driven event simulation"
 locale:             en_US
 baseurl: "/voxicon" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
@@ -14,12 +14,12 @@ analytics-id:
 twitter:            
 facebook:           
 instagram:          
-github:             brandeis-llc
+github:             voxml
 
 # personal
 location:           Waltham, MA
-phone:              310-318-5555
-email:              info@default.com # change this to your email to receive free emails for your contact submissions via Slapform.com
+phone:             
+email:               # change this to your email to receive free emails for your contact submissions via Slapform.com
 
 # Other
 background_image:   /images/bg.jpg
