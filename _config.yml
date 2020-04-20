@@ -1,7 +1,7 @@
 # Site
-title:              Voxicon
-bio:                'Language-driven event simulation'
-description:        "Language-driven event simulation"
+title:              VoxWorld
+bio:                'Situationally-aware AI'
+description:        "Situationally-aware AI"
 locale:             en_US
 baseurl: "/voxicon" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
