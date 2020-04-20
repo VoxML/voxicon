@@ -29,7 +29,7 @@ slapform_thankyou_page: /thank-you
 defaults:
 - scope:
     path: ''
-    type: posts
+    type: posts,archive
   values:
     permalink: "/blog/:title/"
     layout: post
