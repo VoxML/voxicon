@@ -10,14 +10,14 @@ url: "" # the base hostname & protocol for your site
 disqus_shortname:   default
 
 # Social
-analytics-id:       "default"
-twitter:            default
-facebook:           default
-instagram:          default
-github:             default
+analytics-id:       
+twitter:            
+facebook:           
+instagram:          
+github:             brandeis-llc
 
 # personal
-location:           Los Angeles, CA
+location:           Waltham, MA
 phone:              310-318-5555
 email:              info@default.com # change this to your email to receive free emails for your contact submissions via Slapform.com
 
