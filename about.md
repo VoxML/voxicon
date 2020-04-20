@@ -15,7 +15,7 @@ What is VoxWorld?
 
 Another paragraph about VoxWorld
 
-### VoxWorld is Imortant
+### VoxWorld is Important
 <div class="box">
   <p>
   Something in a box goes here
@@ -24,4 +24,4 @@ Another paragraph about VoxWorld
 
 <span class="image left"><img src="{{ "/images/pic05.jpg" | absolute_url }}" alt="Another image goes here" /></span>
 
-A concluding paragraph
+A concluding paragraph goes here and doesn't screw up the formatting
