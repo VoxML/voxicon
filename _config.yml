@@ -34,6 +34,13 @@ defaults:
     permalink: "/blog/:title/"
     layout: post
     author:
+- scope:
+    path: ''
+    type: archive
+  values:
+    permalink: "/archive/:title/"
+    layout: post
+    author:
 
 # Jekyll
 permalink:          /blog/:title/
