@@ -13,7 +13,7 @@ sitemap:
 
 **VoxWorld** is a multimodal simulation platform used to build interactive intelligent systems capable of situational understanding.  Unlike unimodal natural language processing or computer vision frameworks, VoxWorld uses a multimodal semantics to assemble contextual information from multiple modalities in real time.
 
-This allows VoxWorld to support intelligent agents that can not just hear you, but see features of the environment, such as objects of interest or human gestures, and understand the semantics of what they perceive, using a "voxicon" of real-world knowledge.  VoxWorld supports agents that operate wholly in the physical world, wholly in a virtual world, or in mixed reality environments shared with humans.
+This allows VoxWorld to support intelligent agents that can not just hear you, but see features of the environment, such as objects of interest or human gestures, and understand the semantics of what they perceive, using a "*voxicon*" of real-world knowledge.  VoxWorld supports agents that operate wholly in the physical world, wholly in a virtual world, or in mixed reality environments shared with humans.
 
 ### What is a voxicon?
 <div class="box">
