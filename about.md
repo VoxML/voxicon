@@ -15,7 +15,7 @@ sitemap:
 
 This allows VoxWorld to support intelligent agents that can not just hear you, but see features of the environment, such as objects of interest or human gestures, and understand the semantics of what they perceive, using a "voxicon" of real-world knowledge.  VoxWorld supports agents that operate wholly in the physical world, wholly in a virtual world, or in mixed reality environments shared with humans.
 
-### VoxWorld is Important
+### What is a voxicon?
 <div class="box">
   <p>
   A <b>voxicon</b> is a lexicon of "visual object concepts," or <b>voxemes</b>. A voxeme is a visual instantiation of a lexical item, used for generating multimodal simulations of motion events in a three-dimensional environment.</p>
