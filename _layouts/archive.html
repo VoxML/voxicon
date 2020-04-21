@@ -41,6 +41,7 @@
 					<section class="posts">
 						{{site.archive | absolute_url}}
 						{% for post in site.archive %}
+						{{post}}
 						{% assign mod3 = forloop.index | modulo: 3 %}
 							<article>
 								<header>
