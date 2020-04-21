@@ -11,14 +11,14 @@ sitemap:
 
 <span class="image left"><img src="{{ "/images/VoxSimIcon.png" | absolute_url }}" alt="VoxSim icon" /></span>
 
-What is VoxWorld?
+**VoxWorld** is a multimodal simulation platform used to build interactive intelligent systems capable of situational understanding.  Unlike unimodal natural language processing or computer vision frameworks, VoxWorld uses a multimodal semantics to assemble contextual information from multiple modalities in real time.
 
-Another paragraph about VoxWorld
+This allows VoxWorld to support intelligent agents that can not just hear you, but see features of the environment, such as objects of interest or human gestures, and understand the semantics of what they perceive, using a "voxicon" of real-world knowledge.  VoxWorld supports agents that operate wholly in the physical world, wholly in a virtual world, or in mixed reality environments shared with humans.
 
 ### VoxWorld is Important
 <div class="box">
   <p>
-  A <b>voxicon</b> is a lexicon of "visual object concepts" or <b>voxemes</b>. A voxeme is a visual instantiation of a lexical item, used for generating multimodal simulations of motion events in a three-dimensional environment.</p>
+  A <b>voxicon</b> is a lexicon of "visual object concepts," or <b>voxemes</b>. A voxeme is a visual instantiation of a lexical item, used for generating multimodal simulations of motion events in a three-dimensional environment.</p>
 
 <p>VoxWorld is based on the modeling language VoxML, which is used to map natural language expressions into real time visualizations using real-world semantic knowledge of objects and events. Our approach adds a focus on motion and dynamics to the world of multimodal visual grounding to create an environment for situated natural language understanding.
   </p>
@@ -26,4 +26,4 @@ Another paragraph about VoxWorld
 
 <span class="image left"><img src="{{ "/images/voxworld.jpg" | absolute_url }}" alt="VoxWorld sample" /></span>
 
-A concluding paragraph goes here and doesn't screw up the formatting
+VoxWorld was created by the [https://brandeis-llc.github.io](Lab for Linguistics and Computation) at [https://www.brandeis.edu/computer-science/](Brandeis University), and originated as [https://www.darpa.mil/program/communicating-with-computers](DARPA-funded research).  In conjunction with other academic labs and private  institutions, we have used VoxWorld to conduct research on event semantics, spatial reasoning, and referring expressions and have applied the technology to the medical and robotics domains, among others.
