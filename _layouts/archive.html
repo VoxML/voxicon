@@ -40,8 +40,8 @@
 					<!-- Post -->
 					<section class="posts">
 						{% for post in site.posts %}
+							{% assign mod3 = forloop.index | modulo: 3 %}
 							{% if post.categories contains 'Archived' %}
-								{% assign mod3 = forloop.index | modulo: 3 %}
 								<article>
 									<header>
 										<span class="date">{{ post.date | date_to_string }}</span>
