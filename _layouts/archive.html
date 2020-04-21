@@ -39,7 +39,7 @@
           </article>
 					<!-- Post -->
 					<section class="posts">
-						{{site.archive}}
+						{{site.archive | absolute_url}}
 						{% for post in site.archive %}
 						{% assign mod3 = forloop.index | modulo: 3 %}
 							<article>
