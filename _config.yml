@@ -35,7 +35,7 @@ defaults:
     layout: post
     author:
 
-archive: "/archive"
+archive: "/archived"
 
 # Jekyll
 permalink:          /blog/:title/
