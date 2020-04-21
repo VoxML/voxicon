@@ -41,7 +41,7 @@
 					<!-- Post -->
 					<section class="posts">
 						{% for post in site.posts %}
-						{% assign mod3 = forloop.index | modulo: 3 %}
+							{% assign mod3 = forloop.index | modulo: 3 %}
 							{% unless post.categories contains 'Archived' %}
 								<article>
 									<header>
