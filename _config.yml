@@ -35,8 +35,6 @@ defaults:
     layout: post
     author:
 
-archive: "/archived"
-
 # Jekyll
 permalink:          /blog/:title/
 markdown:           kramdown
