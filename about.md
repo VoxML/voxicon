@@ -26,4 +26,6 @@ This allows VoxWorld to support intelligent agents that can not just hear you, b
 
 <span class="image left"><img src="{{ "/images/voxworld.jpg" | absolute_url }}" alt="VoxWorld sample" /></span>
 
+### Who Are We?
+
 VoxWorld was created by the [Lab for Linguistics and Computation](https://brandeis-llc.github.io) at [Brandeis University](https://www.brandeis.edu/computer-science/), and originated as [DARPA-funded research](https://www.darpa.mil/program/communicating-with-computers).  In conjunction with other academic labs and private  institutions, we have used VoxWorld to conduct research on event semantics, spatial reasoning, and referring expressions and have applied the technology to the medical and robotics domains, among others.
