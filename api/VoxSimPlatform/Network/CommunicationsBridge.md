@@ -2,7 +2,7 @@
 layout: page
 title:  "VoxSim API - CommunicationsBridge"
 ---
-# CommunicationsBridge.cs
+# CommunicationsBridge
 Namespace: VoxSimPlatform.Network\
 Inherits: MonoBehaviour\
 File: CommunicationsBridge.cs
