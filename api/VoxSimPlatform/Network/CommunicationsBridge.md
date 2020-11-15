@@ -9,4 +9,4 @@ File: CommunicationsBridge.cs
 
 ## Setting up connections
 Connections can be set up through the Launcher menu in the *VoxSimMenu.unity* scene (**VoxSimPlatform/Scenes**).  One the left side of the Launcher menu you'll see the *Connections* pane.  Click the '+' to add a new connection.
-![Connections Pane](../../images/CommunicationsBridge1.png)
+<img src="../../images/CommunicationsBridge1.png" width="600"></img>
