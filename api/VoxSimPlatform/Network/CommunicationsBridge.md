@@ -70,4 +70,4 @@ public class NLUIOClient : MonoBehaviour {
 
 ## Working Examples
 
-**VoxSimPlatform/Assets/Scripts/Examples** contains a working example of a custom connection using the REST client design pattern to connect to an external [parser](../../NLU/INLParser).
+**VoxSimPlatform/Assets/Scripts/Examples** contains a working example of a custom connection using the REST client design pattern to connect to a simple external [parser](../../NLU/INLParser) (Python client found in **VoxSimPlatform/Assets/Externals/python/nltk_parser_example**).
