@@ -31,4 +31,41 @@ Every connection is defined by four fields (left to right, top to bottom): an *n
 Socket configurations can be edited in this XML file directly and then loaded into VoxSim by clicking "Load Socket Config."
 
 ### Clients/IOClients
-Every connection is handled using two components: the *client* and the *IOClient*.  The *client* is a class whose name matches the *type* field of a socket configuration (including namespace).  Clients must inherit from one of two types: **[SocketConnection](SocketConnection)**--a standard TCP socket--or **[RESTClient](RESTClient)**.
+Every connection is handled using two components: the *client* and the *IOClient*.  The *client* is a class whose name matches the *type* field of a socket configuration (including namespace).  The *IOClient* handles the read operations that the client inherits from its parent class and maintains the reference to the **CommunicationsBridge** so that it can try to reconnect the client if the connect breaks for some reason.
+
+Clients must inherit from one of two types: **[SocketConnection](SocketConnection)**--a standard TCP socket--or **[RESTClient](RESTClient)**.  In the constructor for the client, `client_type` must be set to the type of the associated IOClient:
+```
+public class NLURESTClient : RESTClient {
+  public NLURESTClient() {
+    clientType = typeof(IOClients.NLUIOClient);
+  }
+}
+```
+
+The IOClient must contain a reference to the associated client, and a reference to the communications bridge.  The communications bridge and client are assigned in the `Start()` method (the client is found by its label but can also be found by type):
+```
+public class NLUIOClient : MonoBehaviour {
+  /// <summary>
+  /// The associated REST client
+  /// </summary>
+  RESTClients.NLURESTClient _nluRestClient;
+  public RESTClients.NLURESTClient nluRestClient {
+    get { return _nluRestClient; }
+    set { _nluRestClient = value; }
+  }
+
+  CommunicationsBridge commBridge;
+  
+  // Use this for initialization
+  void Start() {
+    commBridge = GameObject.Find("CommunicationsBridge").GetComponent<CommunicationsBridge>();
+    _nluRestClient = (RESTClients.NLURESTClient)commBridge.FindRESTClientByLabel("NLTK");
+  }
+
+  // Update is called once per frame
+  void Update() {
+  }
+}
+```
+
+**VoxSimPlatform/Assets/Scripts/Examples** contains a working example of a custom connection using the REST client design pattern.
