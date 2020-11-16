@@ -29,3 +29,6 @@ Every connection is defined by four fields (left to right, top to bottom): an *n
 </VoxSimSocketConfig>
 ```
 Socket configurations can be edited in this XML file directly and then loaded into VoxSim by clicking "Load Socket Config."
+
+### Clients/IOClients
+Every connection is handled using two components: the *client* and the *IOClient*.  The *client* is a class whose name matches the *type* field of a socket configuration (including namespace).  Clients must inherit from one of two types: **[SocketConnection](SocketConnection)**--a standard TCP socket--or **[RESTClient](RESTClient)**.
