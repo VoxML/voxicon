@@ -33,7 +33,7 @@ Socket configurations can be edited in this XML file directly and then loaded in
 ### Clients/IOClients
 Every connection is handled using two components: the *client* and the *IOClient*.  The *client* is a class whose name matches the *type* field of a socket configuration (including namespace).  The *IOClient* handles the read operations that the client inherits from its parent class and maintains the reference to the **CommunicationsBridge** so that it can try to reconnect the client if the connect breaks for some reason.
 
-Clients must inherit from one of two types: **[SocketConnection](SocketConnection)**--a standard TCP socket--or **[RESTClient](RESTClient)**.  In the constructor for the client, `clientType` must be set to the type of the associated IOClient:
+Clients must inherit from one of two types: [**SocketConnection**](SocketConnection)--a standard TCP socket--or [**RESTClient**](RESTClient).  In the constructor for the client, `clientType` must be set to the type of the associated IOClient:
 ```
 public class NLURESTClient : RESTClient {
   public NLURESTClient() {
