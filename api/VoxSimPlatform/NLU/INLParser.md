@@ -8,11 +8,22 @@ Inherits: none\
 File: INLParser.cs
 
 ## Methods
-| Private           | |
-|-------------------|-|
-| NLParse           | Parses the input |
-| ConcludeNLParse   | Retrieves parsed output from parser (for use with asynchronous parser clients) |
-| InitParserService | Initializes the parser with its expected syntax |
+<table>
+  <tr>
+    <td><strong>Private</strong></td><td></td>
+  </tr>
+  <tr>
+    <td>NLParse</td><td>Parses the input</td>
+  </tr>
+  </tr>
+  <tr>
+    <td>ConcludeNLParse</td><td>Retrieves parsed output from parser (for use with asynchronous parser clients)</td>
+  </tr>
+  </tr>
+  <tr>
+    <td>InitParserService</td><td>Initializes the parser with its expected syntax</td>
+  </tr>
+</table>
 
 ## Instantiating a parser
 
