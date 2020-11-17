@@ -15,10 +15,8 @@ File: INLParser.cs
   <tr>
     <td>NLParse</td><td>Parses the input</td>
   </tr>
-  </tr>
   <tr>
     <td>ConcludeNLParse</td><td>Retrieves parsed output from parser (for use with asynchronous parser clients)</td>
-  </tr>
   </tr>
   <tr>
     <td>InitParserService</td><td>Initializes the parser with its expected syntax</td>
