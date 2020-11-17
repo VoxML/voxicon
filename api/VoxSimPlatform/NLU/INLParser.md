@@ -25,7 +25,7 @@ File: INLParser.cs
 
 ## Instantiating a parser
 
-The `parser` is a member variable of the **CommunicationsBridge** class.
+The `parser` is a member variable of the [**CommunicationsBridge**](../../Network/CommunicationsBridge) class.
 
 ```
 public class CommunicationsBridge : MonoBehaviour {
@@ -37,7 +37,7 @@ public class CommunicationsBridge : MonoBehaviour {
 }
 ```
 
-Therefore instantiating a parser for use is as simple as assigning an instance to the `parser` variable, as in done in the `InitDefaultParser()` method in **CommunicationsBridge**:
+Therefore instantiating a parser for use is as simple as assigning an instance to the `parser` variable, as in done in the `InitDefaultParser()` method in [**CommunicationsBridge**](../../Network/CommunicationsBridge):
 
 ```
 public void InitDefaultParser() {
@@ -45,7 +45,7 @@ public void InitDefaultParser() {
 }
 ```
 
-Parsers can be implemented directly in C# or written externally in any language and connected via socket or REST connection.  In the case of an external parser, in the method where you instantiate the parser, you also need to run `InitParserService()` and pass in the client handling the connection, and (optionally) the type of the [*expected syntax*](../../NLU/IGenericSyntax.cs) of the parser.
+Parsers can be implemented directly in C# or written externally in any language and connected via socket or REST connection.  In the case of an external parser, in the method where you instantiate the parser, you also need to run `InitParserService()` and pass in the client handling the connection, and (optionally) the type of the [*expected syntax*](../../NLU/IGenericSyntax) of the parser.
 
 ```
 public class NLUModule : MonoBehaviour
@@ -108,7 +108,7 @@ public string NLParse(string rawSent) {
 }
 ```
 
-External parsers that received data from VoxSim and use the REST architecture need to also have an implementation of `ConcludeNLParse()` that retrieves the parse from the external parser, in the expected syntax, and then ultimately turns that into the [predicate-argument format](../../Core/EventManager.cs) that VoxSim requires.
+External parsers that received data from VoxSim and use the REST architecture need to also have an implementation of `ConcludeNLParse()` that retrieves the parse from the external parser, in the expected syntax, and then ultimately turns that into the [predicate-argument format](../../Core/EventManager) that VoxSim requires.
 
 ```
 public string ConcludeNLParse() {
@@ -133,5 +133,5 @@ public string ConcludeNLParse() {
 
 **VoxSimPlatform/Assets/Scripts/NLU/SimpleParser** is the default parser VoxSim will run with if no other parser is instantiated.  It is a very simple rule-based parser with a fixed vocabulary, and is executed directly within C# (and so does not have to be initialized as a service or with an expected syntax.
 
-**VoxSimPlatform/Assets/Scripts/Examples/NLParsers** contains a working example of an interface to custom parser that uses the Python NLTK Library, and connects using the [REST client design pattern](../../Network/RestClient.cs) (Python client found in **VoxSimPlatform/Assets/Externals/python/nltk_parser_example**).
+**VoxSimPlatform/Assets/Scripts/Examples/NLParsers** contains a working example of an interface to custom parser that uses the Python NLTK Library, and connects using the [REST client design pattern](../../Network/RestClient) (Python client found in **VoxSimPlatform/Assets/Externals/python/nltk_parser_example**).
 
