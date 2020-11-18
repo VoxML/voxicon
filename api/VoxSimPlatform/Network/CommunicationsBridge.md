@@ -70,6 +70,6 @@ public class NLUIOClient : MonoBehaviour {
 
 ## Working Examples
 
-**VoxSimPlatform/Assets/Scripts/Examples** contains working examples:\
+**VoxSimPlatform/Assets/Scripts/Examples** contains working examples:
 * **RelationExtractorSocket** + **RelationExtractorIOClient**: a custom TCP socket that works with the [**RelationExtractor**](../../Logging/RelationExtractor) to extract objects in the scene, relations between them, and write them to a SQL database (Python client found in **VoxSimPlatform/Assets/Externals/python/extract_configs**).
 * **NLURESTClient** + **NLUIOClient**: a custom connection using the REST client design pattern to connect to a simple external [parser](../../NLU/INLParser) (Python client found in **VoxSimPlatform/Assets/Externals/python/nltk_parser_example**).
