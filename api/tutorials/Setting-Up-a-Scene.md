@@ -7,7 +7,7 @@ There are four components required to give a Unity scene VoxSim functionality: *
 <img src="../../images/Setting-Up-a-Scene1.png" width="300">
 
 Adding these components gives access to:
-* [VoxML semantics]((../../VoxSimPlatform/Vox/Voxeme) and [interpretation](../../VoxSimPlatform/Core/Predicates)
+* [VoxML semantics](../../VoxSimPlatform/Vox/Voxeme) and [interpretation](../../VoxSimPlatform/Core/Predicates)
 * 3rd-party endpoint connections via the [communications bridge](../../VoxSimPlatform/Network/CommunicationsBridge)
 * Text input via the [input contoller](../../VoxSimPlatform/Agent/InputController)
 * [Event management](../../VoxSimPlatform/Core/EventManager), basic [spatial relation tracking](../../VoxSimPlatform/SpatialReasoning/RelationTracker), and [physics managment](../../VoxSimPlatform/CogPhysics/PhysicsPrimitives)
