@@ -7,4 +7,4 @@ There are four components required to give a Unity scene VoxSim functionality: *
 <img src="../../images/Setting-Up-a-Scene1.png" width="300">
 
 ## Adding Semantic Objects
-In order to make objects interactable, interpretable, and accessible to the VoxSim [event manager](../../Core/EventManager), they must all be [voxemes](../../Vox/Voxeme).
+In order to make objects interactable, interpretable, and accessible to the VoxSim [event manager](../../VoxSimPlatform/Core/EventManager), they must all be [voxemes](../../VoxSimPlatform/Vox/Voxeme).
