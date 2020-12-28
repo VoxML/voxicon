@@ -14,7 +14,13 @@ Adding these components gives access to:
 * [Modal window](../Modal-Windows) and [UI button](../UI-Buttons) management
 
 When the VoxWorld components are all added, a new scene will play with a text input field and a couple of UI buttons:\
-<img src="../../images/Setting-Up-a-Scene2.png" width="600">
+<img src="../../images/Setting-Up-a-Scene2.png" width="800">
 
 ## Creating Semantic Objects
 In order to make objects interactable, interpretable, and accessible to the VoxSim [event manager](../../VoxSimPlatform/Core/EventManager), they must all be [voxemes](../../VoxSimPlatform/Vox/Voxeme).
+
+To make an object into a Voxeme, select it in the hierarchy and add a *Voxeme* component to it.
+<img src="../../images/Setting-Up-a-Scene3.png" width="300">
+
+Objects should have only one Voxeme component.  A Voxeme component on an object signals that the object should be initialized as a semantic object, which includes calculaing its mass at runtime and make it available as an argument to event programs, and links it to VoxML semantics.
+
