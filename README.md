@@ -1,1 +1,3 @@
-# voxicon
+# voxicon.net
+
+Website for VoxWorld
