@@ -27,4 +27,36 @@ Objects should have only one Voxeme component.  A Voxeme component on an object 
 The *Predicate* field of the Voxeme component must be set to the object's semantic type.  At runtime, this will link the Voxeme component on the object to the VoxML encoding of equivalent object.  VoxML encodings for objects should be placed in the folder **VoxML/voxml/objects** parallel to the project **Assets** folder.  The *Lex* field of the VoxML encoding should match the *Predicate* of the Voxeme component.
 
 For example, a minimal VoxML encoding for "bowl" shown below would be saved in **VoxML/voxml/objects/bowl.xml**:
+```
+<?xml version="1.0" encoding="us-ascii"?>
+<VoxML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Entity Type="Object" />
+  <Lex>
+    <Pred>bowl</Pred>
+    <Type>physobj*artifact</Type>
+  </Lex>
+  <Type>
+    <Head>cylindroid[1]</Head>
+    <Components>
+      <Component Value="surface[1]" />
+      <Component Value="interior[2]" />
+    </Components>
+    <Concavity>Concave[2]</Concavity>
+    <RotatSym>Y</RotatSym>
+    <ReflSym>XY,YZ</ReflSym>
+  </Type>
+  <Habitat>
+    <Intrinsic />
+    <Extrinsic />
+  </Habitat>
+  <Afford_Str>
+    <Affordances />
+  </Afford_Str>
+  <Embodiment>
+    <Scale>&lt;agent</Scale>
+    <Movable>true</Movable>
+  </Embodiment>
+</VoxML>
+```
 
+All objects of a single semantic type link to the same VoxML.  For example, if there are multile "bowl" objects in the scene that share the same semantics, they would all need to have Voxeme components on them that all have *Predicate* set to "bowl" and all would link to the above VoxML encoding.
