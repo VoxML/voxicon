@@ -65,4 +65,4 @@ All objects of a single semantic type link to the same VoxML.  For example, if t
 
 To add attributes, like colors, to voxemes, add an [AttributeSet](../../VoxSimPlatform/Vox/AttributeSet) component.  Set *Size* to the number of nominal attributes the object should be able to be referenced by, then fill them into the fields below.  For example, a bowl object with the following attribute set would be able to be referred to as both "white bowl" and "gray bowl".
 
-<img src="../../images/Setting-Up-a-Scene4.png" width="200">
+<img src="../../images/Setting-Up-a-Scene4.png" width="300">
