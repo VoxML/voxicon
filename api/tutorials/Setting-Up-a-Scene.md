@@ -22,6 +22,8 @@ In order to make objects interactable, interpretable, and accessible to the VoxS
 To make an object into a Voxeme, select it in the hierarchy and add a *Voxeme* component to it.
 <img src="../../images/Setting-Up-a-Scene3.png" width="300">
 
+Choosing *VoxSim >> Voxify Object* will add Voxeme components automatically to all selected object.
+
 Objects should have only one Voxeme component.  A Voxeme component on an object signals that the object should be initialized as a semantic object, which includes calculaing its mass at runtime and make it available as an argument to event programs, and links it to VoxML semantics.
 
 The *Predicate* field of the Voxeme component must be set to the object's semantic type.  At runtime, this will link the Voxeme component on the object to the VoxML encoding of equivalent object.  VoxML encodings for objects should be placed in the folder **VoxML/voxml/objects** parallel to the project **Assets** folder.  The *Lex*>>*Pred* field of the VoxML encoding should match the *Predicate* of the Voxeme component.
@@ -59,4 +61,8 @@ For example, a minimal VoxML encoding for "bowl" shown below would be saved in *
 </VoxML>
 ```
 
-All objects of a single semantic type link to the same VoxML.  For example, if there are multile "bowl" objects in the scene that share the same semantics, they would all need to have Voxeme components on them that all have *Predicate* set to "bowl" and all would link to the above VoxML encoding.
+All objects of a single semantic type link to the same VoxML.  For example, if there are multiple "bowl" objects in the scene that share the same semantics, they would all need to have Voxeme components on them that all have *Predicate* set to "bowl" and all would link to the above VoxML encoding.
+
+To add attributes, like colors, to voxemes, add an [AttributeSet](../../VoxSimPlatform/Vox/AttributeSet) component.  Set *Size* to the number of nominal attributes the object should be able to be referenced by, then fill them into the fields below.  For example, a bowl object with the following attribute set would be able to be referred to as both "white bowl" and "gray bowl".
+
+<img src="../../images/Setting-Up-a-Scene4.png" width="200">
