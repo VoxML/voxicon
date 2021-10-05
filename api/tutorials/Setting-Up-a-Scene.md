@@ -42,7 +42,7 @@ To add attributes, like colors, to voxemes, add an [AttributeSet](../../VoxSimPl
   
 2)	Create folders for objects, attributes, programs, relations, and functions in **&lt;project root&gt;/VoxML/voxml** directory.
 
-<img src="../../images/Setting-Up-a-Scene6.png" width="300">
+<img src="../../images/Setting-Up-a-Scene6.png" width="800">
 
 3)	Add desired VoxML encodings into newly created **&lt;project root&gt;/VoxML/voxml folders**. Below are the files that were moved for the sample scene:
 * Attributes: black.xml, white.xml
